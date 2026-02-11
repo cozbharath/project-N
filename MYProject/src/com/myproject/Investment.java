@@ -4,11 +4,13 @@ public class Investment {
 	
 	static int rs = 100;
 	
-	static int rs1 = 7;
+	int rs1;
 	
 	public static void main(String[] args) {
-		System.out.println("Number of Pencils : " + rs/rs1);
-		System.out.println("Remaning Balance : " + rs%rs1);
+		Investment a = new Investment();
+		a.rs1 = 7 ;
+		System.out.println("Number of Pencils : " + rs /  a.rs1);
+		System.out.println("Remaning Balance : " + rs % a.rs1);
 		
 	}
 
