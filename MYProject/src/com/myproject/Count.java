@@ -7,9 +7,6 @@ public class Count {
 		a++;
 	}
 	
-	void class1() {
-		
-	}
 
 	public static void main(String[] args) {
 		Count count = new Count();
