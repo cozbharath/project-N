@@ -13,7 +13,8 @@ public class Student_Info {
 	int mat_Marks;
 	int sci_Marks;
 	int soc_Marks;
-	{
+	
+	static{
 		std_Id++;
 	}
 
