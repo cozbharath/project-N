@@ -41,6 +41,11 @@ int battery;
 }
 
 public class Constructorchaning {
+	String brand;
+	String model;
+	String name;
+	double price;
+	int battery;
 
 	public static void main(String[] args) {
 		Electrocar e1 = new Electrocar("Tata", "Tiago", "Tata Tiago", 500000, 55);
