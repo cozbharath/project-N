@@ -19,8 +19,8 @@ public class EmpSalary {
 		this.monSal = monSal;
 	}
 
-	double getNetSalary(Double Sal) {
-		double netSalary = monSal * 12;
+	double getNetSalary(Double monSal) {
+		netSalary = monSal * 12;
 		return netSalary;
 
 	}
@@ -43,15 +43,15 @@ public class EmpSalary {
 
 	void show() {
 		System.out.println("Employee Name is : " + empName);
-		System.out.println("Employee Name is : " + empid);
+		System.out.println("Employee ID is : " + empid);
 		System.out.println("Emp Monthly Salary is : " + monSal);
-		System.out.println("Employee Net Salary is : " + getNetSalary(monSal));
+		System.out.println("Employee Net Salary is : " + getNetSalary(monSal) );
 	}
 	
 	void show1 () {
 		if (netSalary < 1200000) {
 			System.out.println("Low Salary");
-		} else if (netSalary <= 1900000 && netSalary >= 12) {
+		} else if (netSalary >= 1200000 && netSalary <= 1900000 ) {
 			System.out.println("Medium Salary");
 		} else {
 			System.out.println("High Salary");
