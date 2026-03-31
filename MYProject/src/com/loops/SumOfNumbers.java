@@ -6,7 +6,7 @@ public class SumOfNumbers {
 
 	void getSumofNumbers(int num, int sum) {
 		for(int i =0; i<=num;i++) {
-			sum += i;
+			sum = sum + i;
 		}
 		
 		System.out.println(sum);

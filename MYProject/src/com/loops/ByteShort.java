@@ -3,8 +3,8 @@ package com.loops;
 public class ByteShort {
 
 	public static void main(String[] args) {
-//		for (byte i = 0; i <= 100; i++) {
-//		for (short i = 0; i<= 100; i++) {
+//		for (byte i = 128; i <= 100; i++) {
+//		for (short i = 200; i<= 100; i++) {
 //		for (long i = 0; i<= 100; i++) {
 //		for (float i = 0; i<= 100; i++) {
 		for (double i = 0; i<= 100; i++) {
