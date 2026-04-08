@@ -16,7 +16,7 @@ public class CounttDigitFor {
 			count = 1;
 		}
 		System.out.println(count);
-
+		sc.close();
 	}
 
 }

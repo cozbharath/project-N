@@ -2,7 +2,7 @@ package com.loops;
 
 import java.util.Scanner;
 
-public class MagicNumber {
+public class HappyNumber {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -14,15 +14,15 @@ public class MagicNumber {
 			sum = 0;
 			while (temp > 0) {
 				int r = temp % 10;
-				sum = sum + r;
+				sum += Math.pow(r, 2);
 				temp = temp / 10;
 			}
 		}
 
 		if (sum == 1) {
-			System.out.println("Magic Number");
+			System.out.println("Happy Number");
 		} else {
-			System.out.println("Not Magic Number");
+			System.out.println("Not Happy Number");
 		}
 		sc.close();
 	}

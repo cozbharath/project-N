@@ -14,7 +14,7 @@ public class FactorialWhile {
 			s--;
 		}
 		System.out.println(fact);
-
+		sc.close();
 	}
 
 }

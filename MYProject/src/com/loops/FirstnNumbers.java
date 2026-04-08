@@ -12,6 +12,7 @@ public class FirstnNumbers {
 			System.out.print(s +" ");
 			s++;
 		}
+		sc.close();
 	}
 
 }

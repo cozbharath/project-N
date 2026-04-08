@@ -19,6 +19,7 @@ public class FabonacciSeriesWhile {
 			n2 = n3;
 			count++;
 		}
+		sc.close();
 	}
 
 }

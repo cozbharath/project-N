@@ -17,6 +17,7 @@ public class EvenorOdd {
 			}
 			num++;
 		}
+		sc.close();
 	}
 
 }

@@ -23,6 +23,7 @@ public class MagicNumberFor {
 		} else {
 			System.out.println("Not Magic Number");
 		}
+		sc.close();
 	}
 
 }

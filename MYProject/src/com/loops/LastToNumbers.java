@@ -12,6 +12,7 @@ public class LastToNumbers {
 			System.out.print(s + " ");
 			s--;
 		}
+		sc.close();
 	}
 
 }

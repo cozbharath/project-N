@@ -29,6 +29,7 @@ public class CountNumbers {
 		} else {
 			System.out.println("the given Number is not Palindrome");
 		}
+		sc.close();
 	}
 
 }

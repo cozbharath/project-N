@@ -18,6 +18,7 @@ public class largestNumberInDigit {
 			n = n / 10;
 		}
 		System.out.println(largest);
+		sc.close();
 	}
 
 }

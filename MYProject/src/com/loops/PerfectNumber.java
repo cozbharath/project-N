@@ -10,6 +10,7 @@ public class PerfectNumber {
 		int n = sc.nextInt();
 		int sum = 0;
 		getPerfectNumber(n,sum);
+		sc.close();
 	}
 
 	static void getPerfectNumber(int n, int sum) {
@@ -25,7 +26,6 @@ public class PerfectNumber {
 		} else {
 			System.out.println("Enter number not Prefect");
 		}
-		
 		
 	}
 

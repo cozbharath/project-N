@@ -18,6 +18,7 @@ public class FactorialNumber {
 		int n = sc.nextInt();
 		int fact = isFact(n);
 		System.out.println(fact);
+		sc.close();
 	}
 
 }
