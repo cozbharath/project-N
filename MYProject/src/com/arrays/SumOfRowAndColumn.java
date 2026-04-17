@@ -23,6 +23,15 @@ public class SumOfRowAndColumn {
 			
 			System.out.println("Sum of Columns " +  j  + " = " +sumColumn);
 		}
+		
+		for (int j = 0; j < arr.length; j++) {
+			int sumColumn = 0;
+			for (int i = 0; i < arr[j].length; i++) {
+				sumColumn += arr[i][j];
+			}
+			
+			System.out.println("Sum of Columns " +  j  + " = " +sumColumn);
+		}
 	}
 
 }
