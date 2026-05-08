@@ -20,6 +20,7 @@ public class ResturantBilling {
 			switch (catg) {
 
 			case "pizza" -> {
+				System.out.println("Items " + "veg pizza/ " + "chicken pizza/ " + "cheese pizza");
 				System.out.println("Enter Item:");
 				String item = sc.nextLine().toLowerCase();
 
@@ -32,6 +33,7 @@ public class ResturantBilling {
 			}
 
 			case "burger" -> {
+				System.out.println("Items " + "veg burger/ " + "chicken burger/ " + "cheese burger");
 				System.out.println("Enter Item:");
 				String item = sc.nextLine().toLowerCase();
 
@@ -44,6 +46,7 @@ public class ResturantBilling {
 			}
 
 			case "pasta" -> {
+				System.out.println("Items " + "veg pasta/ " + "white sauce pasta/ " + "red sauce pasta");
 				System.out.println("Enter Item:");
 				String item = sc.nextLine().toLowerCase();
 
@@ -56,19 +59,19 @@ public class ResturantBilling {
 			}
 
 			default -> System.out.println("Invalid Category");
-			
+
 			}
 			if (price > 0) {
-                System.out.println("Enter Quantity:");
-                int qty = sc.nextInt();
-                sc.nextLine(); // clear buffer
+				System.out.println("Enter Quantity:");
+				int qty = sc.nextInt();
+				sc.nextLine(); // clear buffer
 
-                int bill = price * qty;
-                totalBill += bill;
+				int bill = price * qty;
+				totalBill += bill;
 
-                System.out.println("Item Price: " + price);
-                System.out.println("Quantity: " + qty);
-                System.out.println("Item Total: " + bill);
+				System.out.println("Item Price: " + price);
+				System.out.println("Quantity: " + qty);
+				System.out.println("Item Total: " + bill);
 			}
 
 			System.out.println("\nDo you want to order again? (yes/no):");
@@ -77,10 +80,10 @@ public class ResturantBilling {
 		} while (ad.equalsIgnoreCase("yes"));
 
 		System.out.println("\n========================");
-        System.out.println("Total Bill: " + totalBill);
-        System.out.println("Order Successfully Placed ✅");
-        System.out.println("========================");
+		System.out.println("Total Bill: " + totalBill);
+		System.out.println("Order Successfully Placed ✅");
+		System.out.println("========================");
 
-        sc.close();
+		sc.close();
 	}
 }
