@@ -3,15 +3,17 @@ package com.connection;
 public class Student {
 	private int stno;
 	private String stname;
+	private String course;
 	private int marks;
-	
+
 	public Student() {
-		
+
 	}
-	
-	public Student(int sno, String stname, int marks) {
+
+	public Student(int stno, String stname, String course, int marks) {
 		this.stno = stno;
 		this.stname = stname;
+		this.course = course;
 		this.marks = marks;
 	}
 
@@ -25,6 +27,14 @@ public class Student {
 
 	public String getStname() {
 		return stname;
+	}
+
+	public String getCourse() {
+		return course;
+	}
+
+	public void setCourse(String course) {
+		this.course = course;
 	}
 
 	public void setStname(String stname) {
