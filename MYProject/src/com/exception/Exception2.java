@@ -8,37 +8,39 @@ public class Exception2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter Name");
-		String name = sc.nextLine();
-
-		System.out.println("Enter the Age ");
-		int age = sc.nextInt();
-
-		System.out.println("Enter the total Marks ");
-		int marks = sc.nextInt();
-
-		System.out.println("Enter total Subjects ");
-		int sun = sc.nextInt();
-
-		int[] arr = { 10, 20, 30, 40 };
-
-		int user = sc.nextInt();
-
 		try {
-			System.out.println(name.length());
-			System.out.println(age);
+			System.out.println("Enter Name");
+			String name = sc.nextLine();
 
-			System.out.println(marks / sun);
+			System.out.println("Enter Age");
+			int age = sc.nextInt();
 
-			System.out.println("Enter the Position " + arr[user]);
+			System.out.println("Enter Total Marks");
+			int marks = sc.nextInt();
+
+			System.out.println("Enter Total Subjects");
+			int sub = sc.nextInt();
+
+			int[] arr = { 10, 20, 30, 40 };
+
+			System.out.println("Enter Array Index");
+			int user = sc.nextInt();
+
+			System.out.println("Name Length = " + name.length());
+			System.out.println("Age = " + age);
+			System.out.println("Average Marks = " + (marks / sub));
+			System.out.println("Array Element = " + arr[user]);
 		} catch (NullPointerException e) {
-			e.printStackTrace();
+			System.out.println("Null Values are not accepted");
+
 		} catch (InputMismatchException e) {
-			e.printStackTrace();
+			System.out.println("Invalid input! Please enter numbers where required.");
 		} catch (ArithmeticException e) {
-			e.printStackTrace();
+			System.out.println("Cannot divide by zero.");
 		} catch (ArrayIndexOutOfBoundsException e) {
-			e.printStackTrace();
+			System.out.println("Invalid array index.");
+		} finally {
+			sc.close();
 		}
 	}
 
