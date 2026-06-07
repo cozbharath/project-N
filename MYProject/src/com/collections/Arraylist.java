@@ -2,6 +2,7 @@ package com.collections;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class Arraylist {
 
@@ -16,6 +17,11 @@ public class Arraylist {
 		c1.add(25);
 		c1.add(30);
 		c1.add(35);
+
+		Iterator<Integer> itr = c1.iterator();
+		while (itr.hasNext()) {
+			System.out.println(itr.next());
+		}
 
 		for (Integer c : c1) {
 			if (c % 2 != 0) {
