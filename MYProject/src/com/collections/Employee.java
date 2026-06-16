@@ -7,14 +7,12 @@ public class Employee implements Comparable<Employee> {
 	long phone;
 	int age;
 	double salary;
-	
+
 	@Override
 	public String toString() {
 		return "Employee [eid=" + eid + ", name=" + name + ", phone=" + phone + ", age=" + age + ", salary=" + salary
 				+ "]";
 	}
-
-
 
 	public Employee(int eid, String name, long phone, int age, double salary) {
 		super();
@@ -24,13 +22,13 @@ public class Employee implements Comparable<Employee> {
 		this.age = age;
 		this.salary = salary;
 	}
-	
+
 	@Override
 	public int compareTo(Employee o) {
-		
-		if(this.eid < o.eid) {
+
+		if (this.salary < o.salary) {
 			return -1;
-		} else if(this.eid>o.eid) {
+		} else if (this.salary > o.salary) {
 			return 1;
 		} else {
 			return 0;
