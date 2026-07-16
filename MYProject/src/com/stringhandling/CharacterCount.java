@@ -23,6 +23,7 @@ public class CharacterCount {
 				result = result + c;
 			}
 		}
+
 	}
 
 }

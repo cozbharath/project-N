@@ -1,5 +1,6 @@
 package com.gutsession;
 
+
 public class FindTargetElement {
 
 	public static void main(String[] args) {
@@ -13,6 +14,8 @@ public class FindTargetElement {
 //			}
 //		}
 	}
+
+	
 
 	public static int isTarget(int[] arr, int target) {
 		for (int i = 0; i < arr.length; i++) {
