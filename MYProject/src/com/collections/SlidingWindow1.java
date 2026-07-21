@@ -1,6 +1,5 @@
 package com.collections;
 
-import java.util.Scanner;
 
 public class SlidingWindow1 {
 
@@ -19,10 +18,12 @@ public class SlidingWindow1 {
 
 		for (int i = 0; i < num; i++) {
 			windowSum += arr[i];
+			System.out.println("Window Sum : " + windowSum);
 		}
 
 		for (int i = 1; i < arr.length - num; i++) {
 			windowSum = windowSum - arr[i - 1] + arr[i + num - 1];
+			//System.out.println("Window Sum : " + windowSum);
 
 		}
 		System.out.println("Window Sum : " + windowSum);

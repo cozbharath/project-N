@@ -8,10 +8,6 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-interface StudentDetails {
-	void std(int sNo, String name, int marks);
-}
-
 class Details {
 	int sNo;
 	String name;
@@ -33,11 +29,7 @@ public class Student {
 		List<Details> list = Arrays.asList(new Details(101, "Nava", 80), new Details(102, "Nava Bharath", 89),
 				new Details(103, "kumar", 99));
 		Function<Details, String> f = f1 -> {
-			if (f1.marks > 75) {
-				return f1.name;
-			}
-			return "Not defined";
-
+			return f1.name;
 		};
 
 		Predicate<Details> p1 = (p) -> p.marks > 90;
