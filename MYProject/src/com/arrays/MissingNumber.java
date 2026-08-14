@@ -28,12 +28,10 @@ public class MissingNumber {
 		for (int i = 0; i <= 5; i++) {
 			sum += i;
 		}
-//		for (int i = 0; i < arr.length; i++) {
-//			arrSum = arrSum + arr[i];
-//		}
 		for (int a : arr) {
 			arrSum += a;
 		}
+		System.out.println(sum);
 		missingNumber = sum - arrSum;
 		System.out.println(missingNumber);
 	}
